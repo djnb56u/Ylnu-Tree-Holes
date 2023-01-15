@@ -1,0 +1,22 @@
+<!--pages/index/index/index1.wxml-->
+<view class='wall-container'>
+  <!-- 导航栏 -->
+  <view class='search-container'>
+        <view class='search'>
+          <input type='text' 
+                class='search-input' 
+                placeholder="输入你要找的表白消息"         
+                bindinput='getFilter'/>
+          <view class='search-image' bindtap='search'>
+              <image mode="" src='/image/v2/index-search.png'></image>
+          </view>
+        </view>
+    </view>
+  <view class="navigation">
+    
+    <view class="navigation-item"><view data-type="1" bindtap="selected" class="select-tab">全部</view><view class='{{select==1?"select-tab-bootom":""}}'></view></view>
+    <view class="navigation-item"><view data-type="4" bindtap="selected" class="select-tab">最热</view><view class='{{select==4?"select-tab-bootom":""}}'></view></view>
+    <view class="navigation-item"><view data-type="2" bindtap="selected" class="select-tab">收藏</view><view class='{{select==2?"select-tab-bootom":""}}'></view></view>
+    
+  </view>
+</view>
